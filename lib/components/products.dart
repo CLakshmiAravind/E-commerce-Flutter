@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnn/pages/product_details.dart';
 
 class Products extends StatefulWidget {
   const Products({super.key});
@@ -68,7 +69,12 @@ class single_product extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Hero(tag: prod_name, child: Material(
-        child: InkWell(onTap: (){},
+        child: InkWell(onTap: ()=>Navigator.of(context).push(new MaterialPageRoute(builder: (context)=>new ProductDetails(
+          ProdName:prod_name,
+          ProdImage: prod_image,
+          ProdPrice: prod_price,
+          ProdOldPrice: prod_oldPrice,
+        ))),
         child: GridTile(
           footer: Container(
             color: Colors.white70,
