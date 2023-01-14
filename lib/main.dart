@@ -119,6 +119,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+
+import 'package:learnn/components/horizontal_listView.dart';
 import 'home.dart';
 void main() {
   runApp(MaterialApp(
@@ -253,8 +255,16 @@ class _HomeState extends State<Home> {
           children: [
             // Padding(padding: EdgeInsets.all(20),child: Text('Images')),
             carousels(),
-            // Padding(padding: const EdgeInsets.all(2.0),
-            // child: Text('Categories'),)
+            Padding(padding: const EdgeInsets.all(2.0),
+            child: Text('Categories'),),
+            HorizontalList(),
+            
+          Padding(padding: EdgeInsets.all(8.0),
+          child: Text('Recently viewed'),),
+          Container(
+            height: 320.0,
+            Products(),
+          )
           ],
         ),
       ),
