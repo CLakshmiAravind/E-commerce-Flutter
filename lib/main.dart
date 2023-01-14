@@ -122,6 +122,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 
 import 'package:learnn/components/horizontal_listView.dart';
 import 'package:learnn/components/products.dart';
+import 'package:learnn/pages/cart.dart';
 import 'home.dart';
 void main() {
   runApp(MaterialApp(
@@ -148,7 +149,9 @@ class _HomeState extends State<Home> {
         title: Text('E-shop'),
         actions: [
           IconButton(onPressed: () {}, icon: Icon(Icons.search)),
-          IconButton(onPressed: () {}, icon: Icon(Icons.shopping_cart)),
+          IconButton(onPressed: () {
+            Navigator.push(context,MaterialPageRoute(builder: (context)=> Cart()));
+          }, icon: Icon(Icons.shopping_cart)),
         ],
       ),
       drawer: Drawer(
@@ -182,7 +185,9 @@ class _HomeState extends State<Home> {
             ),
 
             InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>Cart()));
+              },
               child: ListTile(
                 title: Text('My account'),
                 leading: Icon(

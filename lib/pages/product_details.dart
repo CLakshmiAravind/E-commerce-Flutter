@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:learnn/pages/cart.dart';
 class ProductDetails extends StatefulWidget {
   final ProdName;
   final ProdImage;
@@ -23,7 +23,9 @@ class _ProductDetailsState extends State<ProductDetails> {
         title: Text('E-shop'),
         actions: [
           IconButton(onPressed: () {}, icon: Icon(Icons.search)),
-          IconButton(onPressed: () {}, icon: Icon(Icons.shopping_cart)),
+          IconButton(onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>Cart()));
+          }, icon: Icon(Icons.shopping_cart)),
         ],
       ),
       body: ListView(
