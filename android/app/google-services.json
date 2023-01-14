@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1019206821971",
+    "project_id": "aravinds-cools-project",
+    "storage_bucket": "aravinds-cools-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019206821971:android:3feb143cbf481f9474fea6",
+        "android_client_info": {
+          "package_name": "com.example.learnn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019206821971-8440ghmlgc0c6og0nc140rd6829j5vea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCOsaCJnZzgyC6ZoCyULmfvJBhVI_T9qY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019206821971-8440ghmlgc0c6og0nc140rd6829j5vea.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
