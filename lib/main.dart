@@ -145,6 +145,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0.0,
         backgroundColor: Colors.redAccent,
         title: Text('E-shop'),
         actions: [
@@ -167,7 +168,66 @@ class _HomeState extends State<Home> {
                 backgroundColor: Colors.amber,
                 child: Icon(Icons.person,color: Colors.white,),
               ),
-            ),)
+            ),),
+
+
+            InkWell(
+              onTap: (){},
+              child: ListTile(
+                title: Text('Home Page'),
+                leading: Icon(Icons.home,color: Color.fromARGB(255, 230, 8, 211),),
+              ),
+            ),
+
+            InkWell(
+              onTap: (){},
+              child: ListTile(
+                title: Text('My account'),
+                leading: Icon(Icons.account_box,color: Color.fromARGB(255, 230, 8, 211),),
+              ),
+            ),
+
+            InkWell(
+              onTap: (){},
+              child: ListTile(
+                title: Text('My Orders'),
+                leading: Icon(Icons.shopping_bag,color: Color.fromARGB(255, 230, 8, 211),),
+              ),
+            ),
+
+            InkWell(
+              onTap: (){},
+              child: ListTile(
+                title: Text('Categories'),
+                leading: Icon(Icons.dashboard,color: Color.fromARGB(255, 230, 8, 211),),
+              ),
+            ),
+
+            InkWell(
+              onTap: (){},
+              child: ListTile(
+                title: Text('Favorites'),
+                leading: Icon(Icons.favorite,color: Color.fromARGB(255, 230, 8, 211),),
+              ),
+            ),
+
+            Divider(),
+
+            InkWell(
+              onTap: (){},
+              child: ListTile(
+                title: Text('Settings'),
+                leading: Icon(Icons.settings,color: Color.fromARGB(255, 230, 8, 211),),
+              ),
+            ),
+
+            InkWell(
+              onTap: (){},
+              child: ListTile(
+                title: Text('About'),
+                leading: Icon(Icons.info,color: Color.fromARGB(255, 230, 8, 211),),
+              ),
+            )
           ],
         ),
       ),
