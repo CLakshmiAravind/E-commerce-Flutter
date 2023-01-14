@@ -121,6 +121,7 @@ import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
 import 'package:learnn/components/horizontal_listView.dart';
+import 'package:learnn/components/products.dart';
 import 'home.dart';
 void main() {
   runApp(MaterialApp(
@@ -262,8 +263,8 @@ class _HomeState extends State<Home> {
           Padding(padding: EdgeInsets.all(8.0),
           child: Text('Recently viewed'),),
           Container(
-            height: 320.0,
-            Products(),
+            height: 260.0,
+            child:Products()
           )
           ],
         ),

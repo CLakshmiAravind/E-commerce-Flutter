@@ -63,6 +63,8 @@ flutter:
     - images/jeans-64.png
     - images/dress-64.png
     - images/shoes.png
+    - images/RV1.webp
+    - images/RV2.webp
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
