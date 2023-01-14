@@ -120,6 +120,8 @@
 
 
 
+// import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 void main(){
@@ -146,8 +148,28 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.redAccent,
         title: Text('E-shop'),
         actions: [
-          IconButton(onPressed: (){}, icon: Icon(Icons.search))
+          IconButton(onPressed: (){}, icon: Icon(Icons.search)),
+          IconButton(onPressed: (){}, icon: Icon(Icons.shopping_cart)),
         ],
+      ),
+      drawer: Drawer(
+        // backgroundColor: Colors.black38,
+        child: ListView(
+          children: [
+//        /*header*/
+            UserAccountsDrawerHeader( 
+            decoration: BoxDecoration(
+              color: Colors.red),
+              accountName: Text('accountName'),
+              accountEmail: Text('accountEmail'),
+              currentAccountPicture: GestureDetector(
+              child: CircleAvatar(
+                backgroundColor: Colors.amber,
+                child: Icon(Icons.person,color: Colors.white,),
+              ),
+            ),)
+          ],
+        ),
       ),
     );
   }
