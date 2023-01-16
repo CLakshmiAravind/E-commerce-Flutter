@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnn/components/cart_products.dart';
 
 class Cart extends StatefulWidget {
   const Cart({super.key});
@@ -19,6 +20,9 @@ class _CartState extends State<Cart> {
           IconButton(onPressed: () {}, icon: Icon(Icons.search)),
         ],
       ),
+
+      body: CartProducts(),
+      
       bottomNavigationBar: Container(
         color: Colors.white,
         child: Row(
