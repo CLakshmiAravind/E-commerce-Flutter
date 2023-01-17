@@ -262,15 +262,12 @@ class _HomeState extends State<Home> {
             // Padding(padding: EdgeInsets.all(20),child: Text('Images')),
             carousels(),
             Padding(padding: const EdgeInsets.all(2.0),
-            child: Text('Categories'),),
+            child: Container(child: Text('Categories'),alignment: Alignment.centerLeft,),),
             HorizontalList(),
             
           Padding(padding: EdgeInsets.all(8.0),
-          child: Text('Recently viewed'),),
-          Container(
-            height: 260.0,
-            child:Products()
-          )
+          child: Container(alignment: Alignment.centerLeft,child: Text('Recently viewed')),),
+          Flexible(child: Products()),
           ],
         ),
       ),

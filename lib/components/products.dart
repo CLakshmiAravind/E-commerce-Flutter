@@ -33,6 +33,12 @@ class _ProductsState extends State<Products> {
       "image":"images/RV2.webp",
       "oldPrice":10,
       "price":8
+    },
+    {
+      "name":"scalff",
+      "image":"images/RV2.webp",
+      "oldPrice":10,
+      "price":8
     }
   ];
   @override
